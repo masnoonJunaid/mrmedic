@@ -18,6 +18,7 @@
   overflow-y: scroll;
   position: fixed;
   height: 90vh;
+  box-shadow: 1px 0 0 0 grey;
 
 }
 
@@ -27,6 +28,14 @@
   margin-left: 25%;
 }
 
+.Navbar{
+  background-color:#1E3770;
+  margin:0;
+  padding:0;
+  position:fixed;
+  display:flex;
+  width:100vw;
+}
 
 
 /* better react app freecodecamp */

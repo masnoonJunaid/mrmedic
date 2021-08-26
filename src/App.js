@@ -1,17 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
+import  {Route,Switch} from 'react-router-dom';
 import './App.css';
+import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar'
+import Home from './components/Home'
 
-function App() {
-  return (
-    <div className="App">
-    <h1>
-      mrmedic University project
-    </h1>
-    <h1>
-      Final year Computer Science and Engineering project
-    </h1>
-    </div>
-  );
+class App extends React.Component {
+  render(){
+    return (
+      <div className="App">
+      <div className="Navbar">
+        <Navbar/>
+      </div>
+      <div className="home">
+        <div className="side-style">
+          <Sidebar />
+        </div>
+        <div className="home-style">
+          <Switch>
+            <Route path="/" component={Home}/>
+          </Switch>
+        </div>
+      </div>
+      </div>
+    );
+
+  }
 }
 
 export default App;
