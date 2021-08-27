@@ -4,9 +4,7 @@ function Navbar(){
   return (
     <NavStyle>
     <div>
-    <h1>
-    MedApp
-    </h1>
+    <h1>MedApp</h1>
     {/*
       <li className="nav-list">Hospitals</li>
       <li className="nav-list">Vaccinations</li>
