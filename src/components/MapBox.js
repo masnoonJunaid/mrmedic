@@ -44,5 +44,5 @@ const MapWrapper = styled.div`
 `
 
 export default GoogleApiWrapper({
- apiKey: ''
+ apiKey: 'AIzaSyAcyPTUUECGcXAoDgx5YSSbmkJF0UZBIpU&v=3'
 })(MapBox);

@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import Home from './components/Home'
+import Register from './components/AddHospital'
 
 class App extends React.Component {
   render(){
@@ -18,7 +19,8 @@ class App extends React.Component {
         </div>
         <div className="home-style">
           <Switch>
-            <Route path="/" component={Home}/>
+            <Route exact path="/hospitals" component={Home}/>
+            <Route path="/add+hospitals" component={Register}/>
           </Switch>
         </div>
       </div>

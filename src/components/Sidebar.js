@@ -6,9 +6,9 @@ import {useState} from 'react';
 function Sidebar(){
   const [links] = useState ([
     {"links":"Vaccinations","url":"vaccinations"},
-    {"links":"Hospitals","url":"hospitals"},
+    {"links":"Hospitals","url":"/hospitals"},
     {"links":"Ambulance","url":"ambulance"},
-    {"links":"Add Hospitals","url":"add+hospitals"},
+    {"links":"Add Hospitals","url":"/add+hospitals"},
   ])
   return(
     <SideStyle>
